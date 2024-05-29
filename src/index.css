@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Proxima Nova", system-ui, sans-serif;
+    font-size: large
+}
+
+.btn_primary {
+    @apply my-2 mx-4 px-5 rounded-lg h-[40px] bg-[#415A77] text-center align-middle text-white antialiased
+        hover:bg-[#334c7d] hover:shadow-lg
+        focus:bg-[#778da9]
+}
+
+.input_primary {
+    @apply my-2 mx-4 px-2 py-1 rounded-xl bg-[#E0E1DD] border-[1px] border-none outline-none antialiased
+        hover:outline-1 hover:outline-black hover:-outline-offset-2
+        focus:shadow-lg 
+        disabled:outline-red-600 disabled:outline-2
+}
+
+.link_primary {
+    @apply text-blue-800 text-sm font-semibold underline
+        focus:text-blue-950 
+}
+
+.invalid {
+    @apply outline-red-600 outline-2 
+}
